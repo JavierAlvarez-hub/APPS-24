@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodos con Arrays</title>
+  </head>
+  <body>
+    <script>
+      let hombres = ["Pablo", "Jose"];
+      let mujeres = ["Maria", "Carmen"];
+      let copiah = hombres.slice(); //crramos una copia de la varible hombres con el metodo .slice, asi si la modificamos siempre podremos volver a la variable original
+      console.log(copiah);
+      let humanos = hombres.concat(mujeres);
+      console.log(humanos);
+      let humanas = mujeres.concat(hombres);
+      console.log(humanas);
+      hombres.push("Pepe");
+      console.log(humanos);
+      humanos = hombres.concat(mujeres);
+      console.log(humanos);
+      console.log(humanos.pop());
+
+      console.log(hombres.lastIndexOf("Pepe"));
+      console.log(hombres.shift());
+      console.log(hombres);
+    </script>
+  </body>
+</html>

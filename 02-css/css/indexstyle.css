@@ -1,0 +1,137 @@
+/*regla CSS consta de 2 partes
+1)selector
+2)bloque de declaraciones : {
+atributo: valor;
+otro atributo de caja: valor valor valor valor;
+}
+selector= Etiqueta de HMTL, etiquetas o atributos especificos con o sin valor.
+*/
+
+/* reseteo personal para los navegadores */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  --violeta: blueviolet; /* aqui creamos una variable */
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%; /* 100vh */
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0%;
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+p {
+  color: black;
+  background-color: darkcyan;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px;
+}
+/* id */
+#menu {
+  list-style: none;
+}
+
+.jerarquia {
+  color: black;
+}
+/*class*/
+.parrafo2 {
+  color: red;
+  font-size: 40px; /* la palabra !important da prioridad a ese atributo sobre todos los demas */
+}
+
+small {
+  color: blue;
+  font-size: 20px;
+  background-color: aquamarine;
+}
+
+.tipo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.strog {
+  font-weight: 900;
+}
+.directos > li {
+  background-color: burlywood;
+}
+.directos strong {
+  color: rgb(43, 226, 180);
+}
+.hermanos-general ~ li {
+  background-color: brown;
+}
+.hermano-adyacente + li {
+  background-color: rgb(240, 18, 177);
+}
+.color {
+  color: aqua;
+}
+.desactivar {
+  pointer-events: none;
+}
+
+/* atributos y valores */
+
+.atributos a[target] {
+  color: red;
+}
+
+.atributos a[target="new"] {
+  color: chartreuse;
+}
+
+.atributos a[href$=".com"] {
+  color: darkorange;
+} /* todos los atribtos finalizan($) con el .com se les aplica el color naranja */
+
+.atributos a[href^="https://"]
+{
+  color: rgb(150, 226, 43);
+} /* todos los atributos empiezan (^) con https:// se les aplica el color blueviolet */
+
+/* pseudo estilos */
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+a:active {
+  color: red;
+}
+h4 {
+  color: grey;
+}
+h4:hover {
+  display: inline;
+  color: var(--violeta);
+  background-color: chartreuse;
+}
+.one {
+  margin-bottom: 50px;
+}
+.two {
+  margin-top: 30px;
+}

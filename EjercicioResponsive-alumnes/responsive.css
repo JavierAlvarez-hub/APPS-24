@@ -1,0 +1,42 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+*,
+*::before,
+*::after,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/bg.png);
+}
+
+header {
+  text-align: center;
+}
+
+article {
+  background-image: url(images/bgButton.png);
+  margin: 3rem;
+  padding: 1rem;
+  width: 150px;
+  height: 150px;
+}
+main {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: justify;
+}

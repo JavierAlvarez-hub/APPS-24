@@ -1,0 +1,21 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+#contenedor_table {
+  width: 50%;
+}
+#cabecera1 {
+  background-color: rgb(243, 199, 112);
+}
+
+#cabecera2 {
+  background-color: rgb(155, 216, 155);
+}
+
+button {
+  background-color: rgb(159, 209, 162);
+  width: 200px;
+}

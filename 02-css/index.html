@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <style>
+      h3{color: brown;}
+    </style>
+  </head>
+  <body>
+  
+  <header>
+    <h1>aprendiendo CSS</h1>
+    cascading style shetts <br />
+    Hojas de estilo en cascada
+  </p>
+  
+   </header>
+<h3 id="inicio">Indice de contenidos</h3>
+  <nav>
+
+
+
+    <ul id="menu">
+      <li ><a href="#basicos">Selectores basicos</a></li>
+      <li><a href="#avanzados">Selectores avanzados</a></li>
+      <li><a href="#jerarquia">Jerarquia en CSS-Restricciones</a></li>
+      <li><a href="recursos/box-model alumnes.html">Modelo de caja</a></li>
+      <li><a href="reseteo">Resetear ordenadores</a></li>
+      <li><a href="#position">Posicionamiento</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li> 
+    </ul>
+  </nav>
+  
+  <main> <section>
+<h3 id="basicos"> Selectores basicos</h3>
+<article>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quo libero ducimus, magni, quisquam doloremque mollitia exercitationem nostrum nihil incidunt amet deserunt veniam saepe fuga ab architecto harum est illo?</p>
+
+
+
+
+</article>
+
+  </section>
+
+  <article>
+
+  <p class="parrafo2 strong">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad esse dignissimos necessitatibus quidem atque, dolore alias, blanditiis qui neque eligendi sint quod voluptatem fugiat nisi enim maiores quam iusto!</p>
+
+
+  </article>
+
+  <article>
+
+    <p class="parrafo2 tipo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio eos distinctio repellat quod officia commodi? Exercitationem ipsum, cum hic quod vero deserunt, architecto magnam adipisci necessitatibus natus, atque ratione?</p>
+  </article>
+
+  <small>con el mismo aspecto que el parrafo 2</small>
+
+  <address class="tipo strong">Avenida Carlomagno, 12</address>
+
+
+
+
+
+
+
+  </main>
+
+  <a href="#inicio">Ir arriba</a>
+
+  <section>
+
+    <h3 id="avanzados">selectores avanzados</h3>
+    <article><h4>selectores de hijos</h4><p>hijosdirectos</p>
+    <ul class="directos">
+      
+      <li><strong>Primavera</strong></li>
+      <li><strong>Verano</strong></li>
+      <li><strong>Otoño</strong></li>
+      <li><strong>Invierno</strong></li>
+    </ul>
+  </article>
+    <article><h4>selectores de hijos</h4>
+    <p>hermanos directos</p>
+    </article>
+<ul>
+      
+      <li class="hermano-adyacente"><strong>Primavera</strong></li>
+      <li class="hermanos-general"><strong>Verano</strong></li>
+      <li><strong>Otoño</strong></li>
+      <li><strong>Invierno</strong></li>
+    </ul>
+
+    <article>
+      <h4>Selectores de atributos</h4>
+      <!--nav>ul>(li>a[href="https://dominio.com"])*5 -->
+      <nav class="atributos">
+        <ul>
+          <li><a href="https://dominio.com" target="_blank">Productos</a></li>
+          <li><a class="opcion" href="https://dominio.com">Nosotros</a></li>
+          <li><a href="https://dominio.com" target="_blank">Servicio tecnico</a></li>
+          <li><a href="https://dominio.com" target="new">Contacto</a></li>
+          <li><a class="opcion" href="https://dominio.com">Localizacion</a></li>
+        </ul>
+      </nav>
+    </article>
+  </section>
+  <hr>
+  <section>
+    <section>
+      <h3 class="color" id="jerarquia">jerarquia de Css. - restricciones</h3>
+      <article><p style="padding-left: 100px;">los navegadores aplican estilos a los documentos HTML por jerarquia basada en :</p></article>
+      <ol>
+        <li>La cascada</li>
+        <li>La especificidad</li>
+        <li>La herencia</li>
+      </ol>
+      <p>La cascada es el procedimiento con el que un navegador aplica los estilos y el orden de importancia</p>
+      <article>
+        <ol>
+          <li>Origen del codigo</li>
+          <ul>
+            <li>Reglas del user Agent</li>
+            <li>Reglas del usuario</li>
+            <li>Reglas del desarrollador</li>
+          </ul>
+          <li>La especificidad del selector</li>
+          <li>Orden de aparacion</li>
+        </ol>
+        <p>la especificidad es la fuerza restrictiva o peso de un selector</p>
+        <ul>
+          <li>Estilo en linea1</li>
+          <li>Identificadores 0,1</li>
+          <li>Clases, atributos, pseudoclases 0,0,1</li>
+          <li>Etiquetas HTML 0,0,0,1</li>
+          <li>!important. Salta toda la jerarquia</li>
+        </ul>
+        <p>La herencia es la capacidad que tienen los elementos padre de hacer heredar a sus hijos sus propiedades. valores inherit o heredados</p>
+
+
+      </article>
+
+      <a href="#inicio">Ir arriba</a>
+      <hr>
+      <div class="container">
+  <p class="one">I am paragraph one.</p>
+  <p class="two">I am paragraph two.</p>
+</div>
+<hr>
+      <a href="#inicio">Ir arriba</a>
+      <section>
+<h3 id="reseteo"> Resetear ordenadores</h3>
+<p>Ante la diferente interpretacion del aspecto de los elementos de HTML de cada navegador, nace la necesidad de borrar o resetear todas las propiedades nativas de los navegadores para dejar el control a los desarrolladores</p> <br>
+<p>Existen en el mercado diversos archivos CSS que funcionan como reseteadores estandar, como normalize.css o reset.css. Para mas informacion ver indexstyle.css</p>
+
+      </section>
+
+      <a href="#inicio">Ir arriba</a>
+      <hr>
+      <h3 id="position">Posicionamiento</h3>
+
+      <p>Tipos de posicionamiento de los elementos HTML</p>
+      <ul>
+        <li><a href="">Static (estatico)</a><small>
+          Comportamiento nativo de posicionamiento de todos los elementos HTML
+        </small></li>
+        
+        <li><a href="../02-css/recursos/positions/fixed.html">Fijo (fixed)</a></li>
+        <li><a href="">Relative(relativo)</a></li>
+        <li><a href="">Absolute(absoluto)</a></li>
+        <li><a href="">Sticky(adhesivo)</a></li>
+      </ul>
+
+  
+
+
+      
+      <article></article>
+    </section>
+  </section>
+
+
+
+  
+
+  
+
+
+</body>
+</html>

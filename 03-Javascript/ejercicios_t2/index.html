@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="principal">Document</title>
+    <link rel="stylesheet" href="objectesPredef.css" />
+    <link rel="stylesheet" href="../02_frameworks/bootstrap-5.3.3-dist/css/bootstrap.css">
+  </head>
+  <body class="table">
+    
+    <h2>Ejercicio 4</h2>
+    <p>
+      Demana mitjançant un “prompt” un títol per a la pàgina web. Si l'usuari no introdueix cap valor o bé clica al botó “cancel·lar”, torna-ho a demanar fins que introdueixi un valor vàlid. Finalment, utilitza un mètode de l'objecte String per passar el valor introduït a majúscules i utilitza un mètode de l'objecte document per establir el valor en majúscula com el nou títol de la pàgina web. 
+    </p>
+
+    <div>
+      <label class="form label" for="numero">Escribe un titulo para la pagina web</label>
+      <input
+        type="text"
+        id="newtitulo"
+        name="numero"
+        class="form-control mb-5"
+        value=""
+      />
+    </div>
+
+    <div id="mostra1" class="alert alert-success" role="alert"></div>
+    <input type="button" value="Cambiar titulo" onclick="cambiarTitulo()">
+    <br>
+    <div id="contenedor_table"></div>
+ <button onclick="finestra()">Mostrar finestra</button>
+<!--  <p id="demo"></p> -->
+  </body>
+   <script src="ejercicio4.js"></script>
+  <script src="objectesPredef.js"></script> 
+  <!--  <script src="ejercicio3_cookies.js"></script>  -->
+  </body>
+</html>

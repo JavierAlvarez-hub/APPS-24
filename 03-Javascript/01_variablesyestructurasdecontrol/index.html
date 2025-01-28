@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables y estructuras de control</title>
+  </head>
+  <body>
+    <script>
+      var hola = "hola mundo";
+      let hello = "hello world";
+      console.log(hola);
+      console.log(hello);
+      console.log(window.hola);
+      console.log(window.hello);
+      function tesVar() {
+        console.log(hola);
+        if (hola) {
+          hola = 800;
+          console.log(hola);
+        }
+      }
+
+      function testLet() {
+        console.log(hello);
+        if (hello) {
+          let hello = 10;
+          console.log(hello);
+        }
+      }
+
+      testLet();
+      console.log(hello);
+    </script>
+    <script src="js/app1.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="js/while_for_dowhile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios con HMTL5</title>
+  </head>
+  <body>
+    <h1>Formularios con HTML5</h1>
+    <link rel="stylesheet" href="../css/style.css" />
+    <h3>contacta con nosotros</h3>
+    <form
+      action="https://formsubmit.co/javieralv90@gmail.com" method="POST">
+
+    
+
+      <fieldset>
+        <legend>Datos personales</legend>
+       <div>
+        <label>
+        <label for="nombre">Nombre y apellidos</label 
+        id="nombre"
+        name="nombre"
+        type="text"
+        placeholder="nombre y apellidos">
+        
+        <input
+          type="text"
+          placeholder="Ej. Pepito grillo"
+          autocomplete
+          required
+          pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$"
+        />
+        </div>
+        </label>
+      <div>
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="0034"  pattern="\d{9,11}"> <br>
+        </div>
+        <div>
+        <label for="correo">correo electronico</label>
+        <input type="email" name="correo" id="correo" pattern="a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"> <!-- el simbolo * implica que el @ es obligatorio en este campo para que se envien los datos al servidor -->
+        </div>
+        <div>
+        <label for="edad">fecha de nacimiento</label>
+        <input type="date" name="edad" id="edad">
+      </div>
+      <div>
+        <label for="sexo">indica tu sexo</label>
+        <input type="radio" name="sexo" id="sexo" value="mujer" checked> Mujer
+        <input type="radio" name="sexo" id="sexo" value="hombre"> Hombre
+        <input type="radio" name="sexo" id="sexo" value="no binario"> No binario
+
+
+
+
+      </div>
+
+      <div>
+
+      <fieldset>
+        <legend>Datos profesionales y preferencias</legend>
+        <label for="Lenguajes">selecciona los lenguajes de programacion que conozcas</label>
+        <select name="Lenguajes" id="Lenguajes" required multiple>
+          <option value="" selected>Elige una opcion</option>
+          <option value="js">javascript</option>
+          <option value="py">Python</option>
+          <option value="Java">Java</option>
+
+        </select>
+
+      </fieldset>
+      </div>
+<div>
+        <label for="deportes">Aficiones:</label> <br>
+        <input type="checkbox" name="deportes" id="deportes" value="deportes" checked> Deportes <br>
+        <input type="checkbox" name="salud" id="salud" value="salud"> Salud <br>
+        <input type="checkbox" name="finanzas" id="finanzas" value="finanzas"> Finanzas <br>
+        <input type="checkbox" name="Politica" id="Politica" value="Politica"> Politica <br>
+
+
+
+
+      </div>
+
+      <div>
+        <label for="cv">sube tu curriculum vitae</label>
+        <input type="file" name="cv" id="cv" accept=".doc,.pdf,.jpg">
+
+      </div>
+
+      <div>
+        <label for="consulta">Explicanos en que podemos ayudarte</label> <br>
+        <textarea name="consulta" id="consulta"></textarea>
+
+
+
+      </div>
+
+      <fieldset>
+        <legend>Gestion de datos</legend>
+        <input type="reset" value="Restablecer" />
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+
+    <a href="../index.html">volver a inicio</a>
+  </body>
+</html>

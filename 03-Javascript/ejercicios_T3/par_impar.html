@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Javascript</title>
+    <link
+      rel="stylesheet"
+      href="../../03-Javascript/02_frameworks/bootstrap-5.3.3-dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid p-5">
+    <h2>Ejercicio 1</h2>
+    <p>
+      crea un HTML que per mitja d'una funció et demani un numero per camp de
+      text i et digui si es nombre parell o imparell
+    </p>
+
+    <div>
+      <label class="form label" for="numero">Escribe un numero</label>
+      <input
+        type="text"
+        id="numero"
+        name="numero"
+        class="form-control mb-5"
+        value=""
+      />
+    </div>
+
+    <div id="mostra1" class="alert alert-success" role="alert"></div>
+    <div>
+      <button class="btn btn-primary" id="btn_ejer1">Ejecutar ejercicio</button>
+      <button class="btn btn-warning" id="btn_limpiar">
+        Limpiar ejercicio
+      </button>
+    </div>
+
+    <script src="par_impar.js"></script>
+  </body>
+</html>

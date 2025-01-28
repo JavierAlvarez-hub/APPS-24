@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Audio y Video con HTML5</h1>
+    <h3>Audio</h3>
+    <audio controls>
+      <source
+        src="../media/HakunaMatataItMeansNoWorries.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="../media/HakunaMatataItMeansNoWorries.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <h3>Video</h3>
+
+    <br />
+
+    <video id="musicos" controls poster="../img/musicos.jpg">
+      <source src="../media/musics.mp4" type="video/mp4" />
+      <source src="../media/musics.ogv" type="video/ogg" />
+    </video>
+    <button onclick="reproducepara()">Play/Pause</button>;
+    <button onclick="grande()">Grande</button>
+    <button onclick="pequeño()">Pequeño</button>
+    <button onclick="Normal()">Normal</button>
+
+    <p>
+      <a href="../index.html">volver a inicio</a>
+    </p>
+    <script src="../Js/javascript.js"></script>
+  </body>
+</html>

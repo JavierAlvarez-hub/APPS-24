@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integracion de Javascript en HTML</title>
+
+    <script>
+      /* window.alert(
+        "PopUp escrito desde un alert con texto 'entrecomillado' en el head del HTML"
+      );
+
+      console.log(
+        "texto escrito en la consola de javascript. no visible en el body"
+      ); */
+    </script>
+  </head>
+  <body>
+    <h1>Insercion de Javascript dentro de elementos html</h1>
+
+    <p>
+      <a href="javascript:nombre();">abre un prompt para mostrar tu nombre</a>
+    </p>
+    <button onclick="nombre()">Muestra tu nombre</button>
+    <div id="mostrar"></div>
+    <div id="mostrar2"></div>
+    <div id="mostrar3"></div>
+    <script>
+      /* window.alert(
+        "PopUp escrito desde un alert con texto 'entrecomillado' en el body del HTML"
+      );
+      console.log(
+        "texto escrito en la consola de javascript. no visible en el body"
+      ); */
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

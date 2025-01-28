@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="new_titulo">HTML del ejercicio 8</title>
+     <link rel="stylesheet" href="../../02_frameworks/bootstrap-5.3.3-dist/css/bootstrap.css"> 
+  </head>
+  <body id="parrafo"> <body class="table">
+    
+    <h2>Ejercicio 8</h2>
+    <p>
+     Escriu un html que en obrir-se canviï el title que hagis posat al head de l'html per un altre que vulguis. Canvieu el color de fons de l'html de blanc a gris i el color del text que tingueu.
+    </p>
+
+    <div>
+      <label class="form label" for="numero">Escribe un titulo para la pagina web</label>
+      <input
+        type="text"
+        id="newtitulo"
+        name="numero"
+        class="form-control mb-5"
+        value=""
+      />
+    </div> 
+    <div id="mostra1" class="alert alert-success" role="alert"></div>
+    <input type="button" value="Cambiar titulo" onclick="otrotitulo()">
+<div>
+  <br>
+  <br>
+  <br>
+  
+      <button id="grey">Cambia color de fondo a GRIS</button>
+      <button id="white">Cambia color de fondo a BLANCO</button>
+</div>
+<br>
+<br>
+<br>
+<div>
+  <button onclick="myFunction()">Cambia el texto de color a rojo</button>
+  <button onclick="funcionverde()">Cambia el texto de color a verde</button>
+</div>
+
+    <script src="ej_8.js"></script>
+  </body>
+</html>

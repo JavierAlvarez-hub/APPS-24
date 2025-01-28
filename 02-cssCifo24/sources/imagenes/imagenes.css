@@ -1,0 +1,54 @@
+img {
+  width: 100%;
+}
+.card {
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  background-color: aqua;
+  background-image: url(https://picsum.photos/800/600);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column;
+}
+
+h4 {
+  font-size: 4rem;
+  color: red;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.galeria {
+  width: 300px;
+  margin: 1rem;
+  height: 300px;
+  overflow: hidden;
+}
+.alinear {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.alinear > a img {
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.alinear > a:hover img {
+  transform: scale(130%);
+}
+.imgfons {
+  width: 100%;
+  height: 600px;
+  background-image: url(../../../01-CursoHTML/img/gif1.gif),
+    url(../../../01-CursoHTML/img/background.jpg);
+  background-position: bottom, center;
+  background-size: 50%, cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
